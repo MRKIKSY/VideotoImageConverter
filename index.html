@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DayStar College Video to Image Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="downloadZipContainer">
+        <button id="downloadZip">Download All Images as ZIP</button>
+    </div>
+
+    <h1> DAYSTAR COLLEGE Upload Video and Convert to Images</h1>
+    <input type="file" id="videoUpload" accept="video/*">
+    <br><br>
+    <video id="video" controls></video>
+    <br><br>
+    <canvas id="canvas"></canvas>
+    <div id="imagesContainer"></div>
+
+    <!-- Load JSZip from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input[type="file"] {
+    font-size: 16px;
+}
+
+#video {
+    display: none;
+    max-width: 80%;
+    margin: 20px 0;
+}
+
+#canvas {
+    display: none;
+}
+
+#imagesContainer {
+    margin-top: 20px;
+}
+
+#imagesContainer img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+a {
+    display: block;
+    margin: 10px 0;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Style for the ZIP download button */
+#downloadZip {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50; /* Green background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Center the ZIP button at the top */
+#downloadZipContainer {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+/* Hover effect for the button */
+#downloadZip:hover {
+    background-color: #45a049; /* Darker green */
+}
